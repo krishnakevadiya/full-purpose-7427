@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/18dcf284b5.js" crossorigin="anonymous"></script>
+<style>
+    body{
+        margin-top: 0%;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+   
+    #navbar{
+      height: 90px;
+      width: 100%;
+      background-color: #32AEB1;
+      display: flex;
+      
+    }
+    #doc1{
+      margin-top: 20px;
+      
+      border: 0px solid red;
+      width:20%;
+      height: 40px;
+      margin-left: 40px;
+      
+    }
+    #doc1>img{
+       height: 50px;
+       
+    }
+   
+    #icon{
+        display: flex;
+        padding-top: 45px;
+        border: 0px solid blue;
+        width: 27%;
+        justify-content: space-around;
+        font-size: large;
+        color: #FFFFFF;
+        
+    }
+    #sbar{
+      height: 90px;
+      width: 100%;
+      background-color: #32AEB1;
+      display: flex;
+      padding-top: 100px;
+      
+      justify-content: space-evenly;
+        
+    }
+    #mainbox{
+        border: 0px solid red;
+        width: 98%;
+        height: 700px;
+        margin: auto;
+        display: flex;
+        justify-content: space-around;
+        background-image:url("https://img.freepik.com/free-vector/clean-medical-background_53876-97927.jpg?w=2000");
+        background-size: contain;
+        
+        
+    }
+    #mainbox>div+div{
+        height: 500px;
+        width: 30%;
+        border: 0px solid blue;
+        padding-right: 100px;
+        padding-top: 50px;
+        margin-right: 90px;
+        border-radius: 25px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(51, 170, 170, 0.336) 0px 3px 7px -3px;
+        
+
+    }
+    form{
+        margin-left:30px;
+        margin-top:10px;
+       }
+       form>input{
+        height:40px;
+        width:90%;
+        margin:auto;
+        margin-top:10px;
+        margin-bottom: 10px;
+        border-radius: 7px;
+        border:1px solid rgb(204, 197, 197);
+        
+       }
+       form>label{
+        padding-bottom:10px;
+        color:rgb(34, 30, 30);
+        font-size:18px
+       }
+       input[type="submit"]{
+        width:91%;
+        color:#FFFFFF;
+        border:none;
+        background-color: #32AEB1;
+       }
+       img{
+        height: 50px;
+        margin-left: 30px;
+        border-radius: 7px;
+        
+
+       }
+       h1{
+       text-align: center;
+       }
+       
+
+
+
+    
+    </style>
+
+</head>
+<body>
+    <div id="navbar">
+        <div id="doc1">
+            <img src="https://www.netmeds.com/assets/gloryweb/images/home-logo-netmeds-new.svg">
+        </div>
+            
+        <div id="icon">  
+            <div><i class="fa-solid fa-arrow-up"></i> Uplord</div>
+            <div><i class="fa-solid fa-cart-shopping"></i> cart</div>
+            <div><i class="fa-solid fa-chalkboard-user"></i>  sign in</div>
+        </div>
+    </div>
+ 
+   
+    <div id="mainbox">
+        <div></div>
+        <div>
+            <h1>sign up</h1>
+            <form>
+                
+                <label for="">Email/mobile number</label></br>
+                <input id="email" type="text" placeholder="Enter email or mobile"></br>
+                <label for="">Password</label></br>
+                <input id="password" type="password" placeholder="Enter password">
+                <p><a href="signin.html">sign in</a></p>
+                <input type="submit">
+            </form>
+            <div>
+                <div>
+                    <img id="img" src="https://user-images.githubusercontent.com/1531669/41761606-83b5bd42-762a-11e8-811a-b78fdf68bc04.png">
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    document.querySelector("form").addEventListener("submit",check);
+    function check(event){
+     event.preventDefault();
+     let email =document.querySelector("#email").value;
+     let password =document.querySelector("#password").value;
+     let userdata=JSON.parse(localStorage.getItem("datalist"));
+     
+     if(userdata.Email==email&&userdata.Password==password){
+       alert("login successful")
+     
+ 
+     }else{
+       alert("details not match")
+     }
+ 
+    }
+    
+     
+ </script>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cartpage</title>
+    <script src="https://kit.fontawesome.com/18dcf284b5.js" crossorigin="anonymous"></script>
+    <style>
+        body{
+            margin-top: 0%;
+            margin-left: 0%;
+            margin-right: 0%;
+        }
+       
+        #navbar{
+          height: 90px;
+          width: 100%;
+          background-color: #32AEB1;
+          display: flex;
+          
+        }
+        #doc1{
+          margin-top: 20px;
+          
+          border: 0px solid red;
+          width:20%;
+          height: 40px;
+          margin-left: 40px;
+          
+        }
+        #doc1>img{
+           height: 50px;
+           
+        }
+       
+        #icon{
+            display: flex;
+            padding-top: 45px;
+            border: 0px solid blue;
+            width: 27%;
+            justify-content: space-around;
+            font-size: large;
+            color: #FFFFFF;
+            
+        }
+        #sbar{
+          height: 90px;
+          width: 100%;
+          background-color: #32AEB1;
+          display: flex;
+          padding-top: 100px;
+          
+          justify-content: space-evenly;
+            
+        }
+        a{
+        color: #FFFFFF;
+        text-decoration-line: none;
+    }
+    #awboxCart{
+        display:grid;
+        grid-template-columns: repeat(4,1fr);
+        gap:20px;
+        
+    }
+    #awboxCart button{
+        height:40px;
+        border:none;
+        width:30%;
+        background-color: #32AEB1;
+        text-align: center;
+    }
+
+    </style>
+
+</head>
+<body>
+   <div id="navbar">
+        <div id="doc1">
+            <img src="https://www.netmeds.com/assets/gloryweb/images/home-logo-netmeds-new.svg">
+        </div>
+            
+        <div id="icon">  
+            <div><i class="fa-solid fa-arrow-up"></i> Uplord</div>
+            <div><i class="fa-solid fa-cart-shopping"></i> cart</div>
+            <div id="chand"><i class="fa-solid fa-chalkboard-user"></i><a href="C:\Users\01\Desktop\unit-2 projrct (1)\full-purpose-7427\signin.html"> sign in/sign up</a></div>
+        </div>
+    </div>
+    <div id="awboxCart"></div> 
+</body>
+</html>
+<script>
+    let product=JSON.parse(localStorage.getItem("cartlist"))
+
+    function cart(data){
+    document.querySelector("#awboxCart").innerHTML=null
+
+    data.forEach(function(ele,index){
+        let box=document.createElement("div");
+        let imag= document.createElement("img");
+        imag.src=ele.src;
+        // imag.setAttribute("src", src);
+        let pric= document.createElement("p");
+        pric.innerText =ele.price
+        let tit= document.createElement("h2");
+        tit.innerText=ele.tital
+        let btnan= document.createElement("button");
+        btnan.innerText="Remove"
+        btnan.addEventListener("click",function(){
+        event.target.parentNode.remove();
+              product.splice(index,1)
+
+           
+            localStorage.setItem("cartlist",JSON.stringify(product))
+            console.log(product);
+
+
+        })
+        box.append(imag,pric,tit,btnan)
+        document.querySelector("#awboxCart").append(box);
+
+
+    })
+}
+ cart(product);
+ console.log(product)
+ 
+</script>
