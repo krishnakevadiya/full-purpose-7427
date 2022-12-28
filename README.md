@@ -28,7 +28,7 @@ Live :https://incandescent-sprite-70edf0.netlify.app/
 
 <hr/>
 <h1> 3.  Product section: </h1>
-<img width="1381" alt="Screenshot 2022-11-30 at 12 22 16 PM" src="https://user-images.githubusercontent.com/110046267/204727810-d97364ce-9a30-475b-8392-ad2cc395290d.png">
+<img width="1381" alt="Screenshot 2022-11-30 at 12 22 16 PM" src="https://startuptrak.com/wp-content/uploads/2021/07/Netmeds-website--728x307.png"/>
 
 <p>The page contains all types of product which you want see acccoring to your selection criteria</p>
 
