@@ -19,7 +19,7 @@ Live :https://incandescent-sprite-70edf0.netlify.app/
 <img width="1436" alt="Screenshot 2022-11-30 at 12 18 15 PM" src="https://startuptrak.com/wp-content/uploads/2021/07/Netmeds--728x300.png"/>
 
 
-<p>The page contains dynamic navbar functionality which is then exported to each section of the website, the navbar contains the account section in which we need to signup or login to the website for purchasing any product. It contains different products whicch will be purchased on single click.</p>
+<p>The page contains dynamic navbar functionality which is then exported to each section of the website, the navbar contains the account section in which we need to signup or login to the website for purchasing any product. It contains different products which will be purchased on single click.</p>
 <hr/>
 <h1> 2.  Account Section: </h1>
 <img width="1402" alt="Screenshot 2022-11-30 at 12 20 51 PM" src="https://user-images.githubusercontent.com/110046267/204727529-f54acfa6-b61b-4fb5-88ef-374f13bca650.png">
