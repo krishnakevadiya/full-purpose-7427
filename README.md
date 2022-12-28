@@ -16,7 +16,7 @@ Live :https://incandescent-sprite-70edf0.netlify.app/
 <h2>lets have a look on the website pages:</h2>
 <hr/>
 <h1> 1. Landing page: </h1>
-<img width="1436" alt="Screenshot 2022-11-30 at 12 18 15 PM" src="https://user-images.githubusercontent.com/https://startuptrak.com/wp-content/uploads/2021/07/Netmeds--728x300.png">
+<img width="1436" alt="Screenshot 2022-11-30 at 12 18 15 PM" src="https://startuptrak.com/wp-content/uploads/2021/07/Netmeds--728x300.png"/>
 
 
 <p>The page contains dynamic navbar functionality which is then exported to each section of the website, the navbar contains the account section in which we need to signup or login to the website for purchasing any product. It contains different products whicch will be purchased on single click.</p>
